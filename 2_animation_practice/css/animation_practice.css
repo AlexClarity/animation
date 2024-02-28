@@ -1,0 +1,138 @@
+/* this is where all of your CSS styles go */
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.grid_container {
+	width: 460px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%; /* for optical centering */
+	transform: translate(-50%,-50%);
+}
+
+.mono {
+	font-family: 'Bodoni 72';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+	margin-top: 0px;
+}
+
+@font-face {
+	font-family: 'Bodoni 72';
+	src:url(../fonts/Bodoni 72 Smallcaps Book.ttf) format('truetype');
+}
+
+/* keyframes */
+
+@keyframes e_explode {
+	0%  { bottom: 0px;  right: 0px; color:black; }
+	40% { bottom:400px; right:400px; color:red; }
+	50% { bottom:400px; right:400px; color:red; }
+	80% { bottom: 0px;  right: -96px; color:black; }
+	100% { bottom: 0px;  right: -96px; color:black; }
+}
+
+.e {
+	opacity: 100%;
+	animation: e_explode 2s linear;
+	animation-delay: 2s;
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+@keyframes x_explode {
+	0%  { bottom: 0px;  left: 0px; color:black; }
+	40% { bottom:300px; left:400px; color:red; }
+	50% { bottom:300px; left:400px; color:red; }
+	80% { bottom: 0px;  left: 96px; color:black; }
+	100% { bottom: 0px; left: 96px; color:black; }
+}
+
+.x {
+	opacity: 100%;
+	animation: x_explode 2s linear;
+	animation-delay: 2s;
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+@keyframes p_explode {
+	0%  { top: 0px;  right: 0px; color:black; }
+	40% { top:400px; right: 400px; color:red; }
+	50% { top:400px; right: 400px; color:red; }
+	80% { top: 0px;  right: -96px; color:black; }
+	100% { top: 0px;  right: -96px; color:black; }
+}
+
+.p {
+	opacity: 100%;
+	animation: p_explode 2s linear;
+	animation-delay: 2s;
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+@keyframes l_explode {
+	0%  { bottom: 0px;  right: 0px; color:black; }
+	40% { bottom:500px; right:100px; color:red; }
+	50% { bottom:500px; right:100px; color:red; }
+	80% { bottom: 0px;  right: -150px; color:black; }
+	100% { bottom: 0px;  right: -150px; color:black; }
+}
+
+.l {
+	opacity: 100%;
+	animation: l_explode 2s linear;
+	animation-delay: 2s;
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+@keyframes o_explode {
+	0%  { bottom: 0px;  left: 0px; color:black; }
+	100% { bottom:500px; left:500px; color:red; opacity:0%; }
+}
+
+.o {
+	opacity: 100%;
+	animation: o_explode 1s linear;
+	animation-delay: 2s;
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+@keyframes d_explode {
+	0%  { top: 0px;  left: 0px; color:black; }
+	100% { top:500px; left:80px; color:red; opacity: 0%;}
+}
+
+.d {
+	opacity: 100%;
+	animation: d_explode 1s linear;
+	animation-delay: 2s;
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+@keyframes e2_explode {
+	0%  { top: 0px;  left: 0px; color:black; }
+	40% { top:500px; left:500px; color:red; }
+	50% { top:500px; left:500px; color:red; }
+	80% { top: 0px;  left: -115px; color:black; }
+	100% { top: 0px;  left: -115px; color:black; }
+}
+
+.e2 {
+	opacity: 100%;
+	animation: e2_explode 2s linear;
+	animation-delay: 2s;
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+
+
